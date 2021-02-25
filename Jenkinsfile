@@ -7,6 +7,12 @@ pipeline {
       }
     }
 
+    stage('Test') {
+      steps {
+        sh 'sh \'npm test\''
+      }
+    }
+
   }
   environment {
     CI = 'true'
