@@ -13,6 +13,12 @@ pipeline {
       }
     }
 
+    stage('Deploy') {
+      steps {
+        echo 'echo \'Deploying to .. .. ..\''
+      }
+    }
+
   }
   environment {
     CI = 'true'
