@@ -1,0 +1,38 @@
+{
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jest": "^26.6.3",
+    "mocha": "^8.3.0",
+    "nodemon": "^2.0.7",
+    "should": "^13.2.3"
+  },
+  "name": "jenkinsdemo",
+  "version": "1.0.0",
+  "description": "Demo Jenkins for CD/CD",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skcodeug/jenkins-demo.git"
+  },
+  "keywords": [
+    "testing",
+    "mocha",
+    "TDD",
+    "Jenkins",
+    "CI/CD"
+  ],
+  "author": "Stephen Kasirye",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/skcodeug/jenkins-demo/issues"
+  },
+  "homepage": "https://github.com/skcodeug/jenkins-demo#readme"
+}
