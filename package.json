@@ -14,9 +14,13 @@
   "directories": {
     "test": "test"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "supertest": "^6.1.3"
+  },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha || true",
+    "dev": "nodemon index.js",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
