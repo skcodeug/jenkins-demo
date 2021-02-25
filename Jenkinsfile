@@ -1,23 +1,26 @@
 pipeline {
-    agent any
-    environment {
-        CI = 'true'
+  agent any
+  stages {
+    stage('Build') {
+      steps {
+        sh 'npm install'
+      }
     }
-    stages {
-        stage('Build') {
-            steps {
-                sh 'npm install'
-            }
-        }
-        stage('Test') {
-            steps {
-                sh 'npm test'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying to Heroku .. .. ..' 
-            }
-        }
+
+    stage('Test') {
+      steps {
+        sh 'npm test'
+      }
     }
+
+    stage('Deploy') {
+      steps {
+        echo 'echo \'Deploying to .. .. ..\''
+      }
+    }
+
+  }
+  environment {
+    CI = 'true'
+  }
 }
